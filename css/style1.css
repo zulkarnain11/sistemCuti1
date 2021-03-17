@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+* input[type="text"]{
+    padding: 5px 0;
+}
+/*fokus saiz phone yang lebar kurang dari 736px*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/1.jpeg) top ;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+/*untuk container ada tiga row, satu row welcome, log-out, btn yang mempunyai fungsi*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 30px 1fr;
+    grid-template-areas: 
+    "welcome "
+    "log-out"
+    "btn";
+}
+/*declare area untuk welcome dan gunakan dalam container*/
+.welcome{
+    grid-area: welcome;
+    background-color: rgb(94, 0, 94);
+    
+}
+/*declare area untuk log-out dan gunakan dalam container*/
+.log-out{
+    grid-area: log-out;
+    width: 100vw;
+    
+}
+/*declare area untuk btn dan gunakan dalam container*/
+.btn{
+    grid-area: btn;  
+    margin-top: 70px;
+    width: 100vw;
+}
+
+
+.welcome h1{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    color: #ffffff;
+    width: 100vw;
+}
+.log-out p{
+    text-align: right;
+    position: relative;
+    top: 4px;
+    
+}
+.log-out p a{
+    text-decoration: none;
+    padding: 5px 15px;
+    background-color: red;
+    color: #ffffff;
+    font-weight: 900;
+}
+.btn button{
+    display: block;
+    width: 100px;
+    margin: 20px auto auto auto;
+    padding: 20px 0;
+    font-weight: bold;
+    background-color:  rgb(129, 5, 129);
+    color: #ffffff;
+    border: none;
+    border-radius: .5em;
+}
+.btn .adduser{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 95vw;
+    margin: 15px auto;
+    margin-bottom: 0;
+    padding: 4px;
+    
+}
+.btn .adduser input[type="file"]{
+    color: #ffffff;
+}
+.btn .adduser table tr td{
+    color: #ffffff;
+}
+.btn .adduser table tr td input{
+    padding: 5px 0;
+    color: #000000;
+    
+}
+.btn .adduser input[type="submit"],
+.btn .adduser input[type="reset"]{
+    position: relative;
+    left: 25vw;
+    margin-top: 10px;
+}
+.btn .adduser input[type="submit"]{
+    padding: 10px 15px;
+    background-color: rgb(3, 20, 255);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: .5em;
+
+}
+.btn .adduser input[type="reset"]{
+    padding: 10px 15px;
+    background-color: red;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: .5em;
+}
+.btn .edit{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 95vw;
+    margin: 15px auto;
+    margin-bottom: 0;
+    padding: 4px;
+}
+.btn .edit input[type="text"],.btn .edit input[type="submit"]{
+    padding: 5px 0;
+}
+.btn .edit input[type="submit"]{
+     margin-left: 15px;
+    padding: 10px 15px;
+    background-color: rgb(3, 20, 255);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: .5em;
+}
+
+.btn .delete{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 95vw;
+    margin: 15px auto;
+    padding: 4px;
+}
+.btn .delete input[type="text"]{
+    padding: 5px 0;
+}
+.btn .delete input[type="submit"]{
+    margin-left: 15px;
+}
+.btn #information{
+    display: block;
+}
+.btn .edit-search{
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 95vw;
+    margin: 0 auto;
+    padding: 0 4px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.btn .edit-search #information{
+    display: block;
+}
+
+.btn .edit-search table tr td img{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ffffff;
+}
+.btn .edit-search table tr td input[type="submit"]{
+    padding: 10px 15px;
+    background-color: rgb(3, 20, 255);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: .5em;
+}
+#department {
+    width: 200px;
+}
+#department option{
+    width: 200px;
+}
+#department1 {
+    width: 200px;
+}
+#department1 option{
+    width: 200px;
+}
+.btn .delete input[type="submit"]{
+    background-color: red;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: .5em;
+}
+.btn .delete-user{
+    background-color: rgb(0, 0, 0);
+    width: 95vw;
+    margin: 0 auto;
+    padding: 0 4px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.footer{
+    width: 100vw;
+    height: 150px;
+}
+
+
+/*fokus kepada saiz yang lebarnya lebih 736px*/
+@media screen and (min-width :736px){
+    body{
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/1.jpeg) top ;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 30px 1fr;
+        grid-template-areas: 
+        "welcome"
+        "log-out"
+        "btn";
+    }
+    
+    .welcome{
+        grid-area: welcome;
+        background-color: rgb(94, 0, 94);
+        
+    }
+    .log-out{
+        grid-area: log-out;
+        width: 100vw;
+        
+    }
+    .btn{
+        grid-area: btn;  
+        margin-top: 70px;
+        
+    }
+    
+    
+    .welcome h1{
+        text-align: center;
+        position: relative;
+        top: 20px;
+        color: #ffffff;
+        width: 100vw;
+    }
+    .log-out p{
+        text-align: right;
+        position: relative;
+        top: 4px;
+        
+        
+    }
+    .log-out p a{
+        text-decoration: none;
+        padding: 5px 15px;
+        background-color: red;
+        color: #ffffff;
+        font-weight: 900;
+    }
+    .btn button{
+        display: block;
+        width: 100px;
+        margin: 20px auto auto auto;
+        padding: 20px 0;
+        font-weight: bold;
+        background-color:  rgb(129, 5, 129);
+        color: #ffffff;
+        border: none;
+        border-radius: .5em;
+    }
+    .btn .adduser{
+        display: none;
+        background-color: rgba(0, 0, 0, 0.664);
+        width: 95vw;
+        margin: 0 auto;
+        padding: 4px;
+        
+    }
+    .btn .adduser input[type="file"]{
+        color: #ffffff;
+    }
+    .btn .adduser table tr td{
+        color: #ffffff;
+    }
+    .btn .adduser table tr td input{
+        padding: 5px 0;
+        color: #000000;
+        
+    }
+    .btn .adduser input[type="submit"],
+    .btn .adduser input[type="reset"]{
+        position: relative;
+        left: 25vw;
+        margin-top: 10px;
+    }
+    .btn .adduser input[type="submit"]{
+        padding: 10px 15px;
+        background-color: rgb(3, 20, 255);
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        border-radius: .5em;
+    
+    }
+    .btn .adduser input[type="reset"]{
+        padding: 10px 15px;
+        background-color: red;
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        border-radius: .5em;
+    }
+    .btn .edit{
+        display: none;
+        background-color: rgba(0, 0, 0, 0.664);
+        width: 95vw;
+        margin: 0 auto;
+        padding: 4px;
+    }
+    .btn .edit input[type="text"],.btn .edit input[type="submit"]{
+        padding: 5px 0;
+    }
+    .btn .edit input[type="submit"]{
+        margin-left: 15px;
+        padding: 10px 15px;
+        background-color: rgb(3, 20, 255);
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        border-radius: .5em;
+    }
+    .btn .delete{
+        display: none;
+        background-color: rgba(0, 0, 0, 0.664);
+        width: 95vw;
+        margin: 0 auto;
+        padding: 4px;
+    }
+    .btn .delete input[type="submit"]{
+        margin-left: 15px;
+    }
+    .btn #information{
+        display: block;
+    }
+    .btn .edit-search{
+        background-color: rgba(0, 0, 0, 0.664);
+        width: 95vw;
+        margin: 0 auto;
+        padding: 0 4px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .btn .edit-search #information{
+        display: block;
+    }
+    
+    .btn .edit-search table tr td img{
+        width: 150px;
+        height: 150px;
+        border: 5px solid #ffffff;
+    }
+    .btn .edit-search table tr td input[type="submit"]{
+        padding: 10px 15px;
+        background-color: rgb(3, 20, 255);
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        border-radius: .5em;
+    }
+    #department {
+        width: 200px;
+    }
+    #department option{
+        width: 200px;
+    }
+    #department1 {
+        width: 200px;
+    }
+    #department1 option{
+        width: 200px;
+    }
+    .btn .delete input[type="text"]{
+        padding: 5px 0;
+    }
+    .btn .delete input[type="submit"]{
+        background-color: red;
+        color: #ffffff;
+        font-weight: 600;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: .5em;
+    }
+    .btn .delete-user{
+        background-color: rgb(0, 0, 0);
+        width: 95vw;
+        margin: 0 auto;
+        padding: 0 4px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .footer{
+        width: 100vw;
+        height: 150px;
+    }
+    
+}

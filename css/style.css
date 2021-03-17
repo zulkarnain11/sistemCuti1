@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/5.jpeg) top no-repeat;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "about"
+    "log-in";
+}
+
+.about{
+    grid-area: about;
+   
+    
+}
+.about img{
+    display: block;
+    width: 250px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about h1{
+    background-color: rgba(94, 84, 104,0.4);
+    color: #ffffff;
+    text-align: center;
+    margin: 0 10px;
+}
+.log-in{
+    grid-area: log-in;
+   
+       
+}
+.log-in form{
+    display: block;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
+    margin-top: 10px;
+    background-color: darkgray;   
+    border-radius: 1em;
+    
+    
+}
+.log-in form h1{
+    color: #ffffff;
+    background-color: rgb(165, 26, 165);
+    text-align: center;
+    border-radius: .5em .5em 0 0;
+    padding: 10px 0;
+}
+.log-in form img{
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+}
+input[type="text"],input[type="password"]{
+
+    text-align: justify;
+    margin-left: 5px;
+    position: relative;
+    left: 10px;
+    outline: none;
+    margin: 15px 0;
+    padding: 10px 0px 10px 10px;
+    border-radius: .5em;
+    color: #000000;
+    font-size: large;
+    border: none;
+}
+input[type="text"]{
+    margin-top: 1.7em;
+}
+input[type="submit"]{
+    display: block;
+    position: relative;
+    left: 40%;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: rgb(165, 26, 165);
+    outline: none;
+    border: none;
+    border-radius: .3em;
+    
+}
+.log-in form p{
+    text-align: center;
+    margin-top: 10px;
+    color: #ff0000;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+}
+
+
+@media screen and (min-width :736px){
+
+    body{
+    
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/4.jpeg) top;
+        background-repeat: repeat-y;
+        background-size: cover;
+        
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 1fr;
+        grid-template-areas:
+        ". ."
+        "about log-in";
+    }
+    
+    .about{
+        grid-area: about;
+        
+    }
+    .log-in{
+        grid-area: log-in;
+        
+        
+    }
+    .about img{
+        display: block;
+        width: 300px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: none;
+        
+        
+    }
+    .about h1{
+        background-color: rgba(94, 84, 104,0.4);
+        color: #ffffff;
+        text-align: center;
+        margin: 0 10px;
+    }
+    .log-in form{
+        display: block;
+        width: 350px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .5em;
+        margin-top: 20px;
+        background-color: darkgray;       
+        border-radius: 1em;
+        
+    }
+    .log-in form h1{
+        color: #ffffff;
+        background-color: rgb(165, 26, 165);
+        text-align: center;
+        border-radius: .5em .5em 0 0;
+        padding: 15px 0;
+    }
+    .log-in form img{
+        margin-left: 10px;
+        position: relative;
+        top: 10px;
+    }
+    input[type="text"],input[type="password"]{
+    
+        text-align: center;
+        position: relative;
+        left: 10px;
+        outline: none;
+        margin: 15px 0;
+        padding: 10px 0;
+        border-radius: .5em;
+        color: #000000;
+        font-size: large;
+        border: none;
+    }
+    input[type="text"]{
+        margin-top: 1.7em;
+    }
+    input[type="submit"]{
+        display: block;
+        position: relative;
+        left: 40%;
+        padding: 10px 20px;
+        font-size: large;
+        font-weight: bold;
+        margin-top: 15px;
+        color: #ffffff;
+        background-color: rgb(165, 26, 165);
+        outline: none;
+        border: none;
+        border-radius: .3em;
+        cursor: pointer;
+    }
+    .log-in form p{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+}
